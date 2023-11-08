@@ -1,0 +1,27 @@
+//palette
+$primary: rgb(0, 128, 128);
+$black: rgb(17, 17, 17);
+$darkgrey: rgb(51, 51, 51);
+$lightgrey: rgb(211, 211, 211);
+$white: rgb(247, 247, 247);
+
+//breakpoints
+$xs: 0px;
+$md: 576px;
+$xl: 1200px;
+
+$txt-size-title: 3em;
+
+$title: (
+    font-size:$txt-size-title,
+    font-weight:700,
+    color:$white,
+    text-transform: uppercase,
+    background: $black,
+);
+
+.title {
+    @each $property, $value in $title {
+      #{$property}: $value;
+    }
+  }

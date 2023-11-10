@@ -1,150 +1,43 @@
+:root {
+  --bg: #A3BF8F;
+  --secondary: #D8B3A2;
+  --btn-bg: #D9BDAD;
+  --light: #F5FFFA;
+  --p-color: #333333;
+  --title-color: #113924;
+}
+
+.dark-theme {
+  --bg: #113924;
+  --secondary: #97644C;
+  --btn-bg: #D9BDAD;
+  --light: #111111;
+  --p-color: #f7f7f7;
+  --title-color: #A3BF8F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .title {
-  font-size: 3em;
+  font-family: "vessel";
+  font-size: 2em;
   font-weight: 700;
-  color: rgb(247, 247, 247);
+  color: var(--bg);
   text-transform: uppercase;
-  background: rgb(17, 17, 17);
-}
-
-.header {
-  position: fixed;
-  width: 94vw;
-  margin: 0 3vw;
-  border-bottom: 2px solid rgb(247, 247, 247);
-  height: 80px;
-}
-@media (min-width: 576px) {
-  .header {
-    height: 100px;
-  }
-}
-
-.header ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 100%;
-  height: 100%;
-}
-.header ul li {
-  margin: 0 20px;
-}
-
-.logo-box {
-  height: 100%;
-}
-.logo-box a {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.logo-box a img {
-  width: 65px;
-}
-@media (min-width: 0px) {
-  .logo-box a img {
-    max-width: 10vw;
-  }
-}
-
-.marquee-box {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 100%;
-  width: 100vw;
-  overflow: hidden;
-  text-overflow: fade;
-}
-
-.marquee {
-  position: absolute;
-  display: table-cell;
-  white-space: nowrap;
-}
-
-h6 {
-  display: inline-block;
-  padding-left: 100%;
-  text-align: center;
-  white-space: nowrap;
-  min-width: 100%;
-  height: 100%;
-  line-height: 100%;
-  animation: marquee 40s linear infinite;
-  padding-right: 15%;
-}
-
-.marquee2 h6 {
-  animation-delay: 20s;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@media (min-width: 0px) {
-  .caption-box {
-    display: none;
-  }
-}
-@media (min-width: 576px) {
-  .caption-box {
-    display: list-item;
-  }
-}
-
-.caption-grid {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  padding: 10px 0;
-}
-@media (min-width: 576px) {
-  .caption-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .caption-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    -moz-column-gap: 50px;
-         column-gap: 50px;
-  }
-}
-
-.caption-box .caption-grid a img {
-  display: grid;
-  width: 30px;
-}
-
-.link-box {
-  width: -moz-fit-content;
-  width: fit-content;
-  position: fixed;
-  bottom: 3vw;
-  right: 0;
-}
-
-.link-button {
-  position: relative;
-  background: rgba(247, 247, 247, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 10px solid rgba(0, 128, 128, 0.3);
-  width: 300%;
-  left: -300%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 @font-face {
@@ -167,57 +60,27 @@ h6 {
   src: url(/Assets/Typography/Antonio-VariableFont_wght.ttf);
   font-weight: 400;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 16;
-}
-
 body {
-  background-color: rgb(17, 17, 17);
-  z-index: -2;
-}
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/Assets/Media/Noise.gif");
-  background-repeat: cover;
-  z-index: -1;
-  opacity: 0.1;
+  background: var(--bg);
 }
 
-.container {
-  width: 100vw;
-  height: 100%;
-}
-.container .content {
-  padding-top: 100px;
+#dark-mode {
+  width: 240px;
+  height: 100px;
+  background: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 50px;
+  display: grid;
+  position: relative;
+  place-items: center;
 }
 
-h6 {
-  text-transform: uppercase;
-  color: rgb(247, 247, 247);
-  font-weight: 300;
-}
-@media (min-width: 0px) {
-  h6 {
-    font-size: 0.7em;
-  }
-}
-@media (min-width: 576px) {
-  h6 {
-    font-size: 1em;
-  }
-}
-@media (min-width: 1200px) {
-  h6 {
-    font-size: 1.5em;
-  }
+.moon {
+  position: absolute;
+  right: 10px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  background: shite;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

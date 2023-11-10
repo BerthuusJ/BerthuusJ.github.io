@@ -1,6 +1,5 @@
-@use "./_variables";
-@use "./header";
-@use "./linkButton";
+@use "./Assets/Scss/elements";
+@use "./Assets/Scss/Variables/colors";
 
 @font-face {
   font-family: Poppins;
@@ -23,51 +22,28 @@
   font-weight: 400;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 16;
-}
-
 body {
-  background-color: variables.$black;
-  z-index: -2;
-  &::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/Assets/Media/Noise.gif");
-    background-repeat: cover;
-    z-index: -1;
-    opacity: 0.1;
-  }
+  background: var(--bg);
 }
 
-.container {
-  width: 100vw;
-  height: 100%;
-  & .content {
-    padding-top: 100px;
-  }
+#dark-mode {
+  width: 240px;
+  height: 100px;
+  background: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius:50px;
+  display: grid;
+  position: relative;
+  place-items: center;
 }
 
-h6 {
-  text-transform: uppercase;
-  color: variables.$white;
-  font-weight: 300;
-  @media (min-width: (variables.$xs)) {
-    font-size: 0.7em;
-  }
-  @media (min-width: (variables.$md)) {
-    font-size: 1em;
-  }
-  @media (min-width: (variables.$xl)) {
-    font-size: 1.5em;
-  }
+.moon {
+  position: absolute;
+  right: 10px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  background: shite;
+  border-radius: 50%;
+
 }

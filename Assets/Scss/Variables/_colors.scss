@@ -1,18 +1,68 @@
+$clr-primary-100:lch(var(--l-100) var(--clr-primary));
+$clr-primary-200:lch(var(--l-200) var(--clr-primary));
+$clr-primary-300:lch(var(--l-300) var(--clr-primary));
+$clr-primary-400:lch(var(--l-400) var(--clr-primary));
+$clr-primary-500:lch(var(--l-500) var(--clr-primary));
+$clr-primary-600:lch(var(--l-600) var(--clr-primary));
+$clr-primary-700:lch(var(--l-700) var(--clr-primary));
+
+$clr-secondary-100:lch(var(--l-100) var(--clr-secondary));
+$clr-secondary-200:lch(var(--l-200) var(--clr-secondary));
+$clr-secondary-300:lch(var(--l-300) var(--clr-secondary));
+$clr-secondary-400:lch(var(--l-400) var(--clr-secondary));
+$clr-secondary-500:lch(var(--l-500) var(--clr-secondary));
+$clr-secondary-600:lch(var(--l-600) var(--clr-secondary));
+$clr-secondary-700:lch(var(--l-700) var(--clr-secondary));
+
+$clr-neutral-100:lch(var(--l-100) var(--clr-neutral));
+$clr-neutral-200:lch(var(--l-200) var(--clr-neutral));
+$clr-neutral-300:lch(var(--l-300) var(--clr-neutral));
+$clr-neutral-400:lch(var(--l-400) var(--clr-neutral));
+$clr-neutral-500:lch(var(--l-500) var(--clr-neutral));
+$clr-neutral-600:lch(var(--l-600) var(--clr-neutral));
+$clr-neutral-700:lch(var(--l-700) var(--clr-neutral));
+
+$clr-bw-0:lch(var(--l-0) var(--clr-bw));
+$clr-bw-50:lch(var(--l-50) var(--clr-bw));
+$clr-bw-100:lch(var(--l-100) var(--clr-bw));
+$clr-bw-200:lch(var(--l-200) var(--clr-bw));
+$clr-bw-300:lch(var(--l-300) var(--clr-bw));
+$clr-bw-400:lch(var(--l-400) var(--clr-bw));
+$clr-bw-500:lch(var(--l-500) var(--clr-bw));
+$clr-bw-600:lch(var(--l-600) var(--clr-bw));
+$clr-bw-700:lch(var(--l-700) var(--clr-bw));
+$clr-bw-800:lch(var(--l-800) var(--clr-bw));
+$clr-bw-900:lch(var(--l-900) var(--clr-bw));
+
 :root {
-  --bg: #A3BF8F;
-  --secondary: #D8B3A2;
-  --btn-bg: #D9BDAD;
-  --light: #F5FFFA;
-  --p-color: #333333;
-  --title-color: #113924;
+  --clr-primary: 14.49 197.73;
+  --clr-secondary:32.43 151.66;
+  --clr-neutral:18.6 268.68;
+  --clr-bw:0 0;
+
+  --l-0: 100%;
+  --l-50: 90%;
+  --l-100: 80%;
+	--l-200: 70%;
+	--l-300: 60%;
+	--l-400: 50%;
+	--l-500: 40%;
+	--l-600: 30%;
+	--l-700: 20%;
+	--l-800: 10%;
+  --l-900: 0;
 }
 
 .dark-theme {
-  --bg: #113924;
-  --secondary: #97644C;
-  --btn-bg: #D9BDAD;
-  --light: #111111;
-  --p-color: #f7f7f7;
-  --title-color: #A3BF8F;
+  --l-0: 0;
+  --l-50: 10%;
+  --l-100: 20%;
+	--l-200: 30%;
+	--l-300: 40%;
+	--l-400: 50%;
+	--l-500: 60%;
+	--l-600: 70%;
+	--l-700: 80%;
+	--l-800: 90%;
+  --l-900: 100%;
 }
-

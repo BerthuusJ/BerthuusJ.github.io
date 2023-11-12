@@ -1,19 +1,33 @@
 :root {
-  --bg: #A3BF8F;
-  --secondary: #D8B3A2;
-  --btn-bg: #D9BDAD;
-  --light: #F5FFFA;
-  --p-color: #333333;
-  --title-color: #113924;
+  --clr-primary: 14.49 197.73;
+  --clr-secondary:32.43 151.66;
+  --clr-neutral:18.6 268.68;
+  --clr-bw:0 0;
+  --l-0: 100%;
+  --l-50: 90%;
+  --l-100: 80%;
+  --l-200: 70%;
+  --l-300: 60%;
+  --l-400: 50%;
+  --l-500: 40%;
+  --l-600: 30%;
+  --l-700: 20%;
+  --l-800: 10%;
+  --l-900: 0;
 }
 
 .dark-theme {
-  --bg: #113924;
-  --secondary: #97644C;
-  --btn-bg: #D9BDAD;
-  --light: #111111;
-  --p-color: #f7f7f7;
-  --title-color: #A3BF8F;
+  --l-0: 0;
+  --l-50: 10%;
+  --l-100: 20%;
+  --l-200: 30%;
+  --l-300: 40%;
+  --l-400: 50%;
+  --l-500: 60%;
+  --l-600: 70%;
+  --l-700: 80%;
+  --l-800: 90%;
+  --l-900: 100%;
 }
 
 * {
@@ -25,11 +39,6 @@
   font-size: 16;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .title {
   font-family: "vessel";
   font-size: 2em;
@@ -38,6 +47,11 @@ img {
   text-transform: uppercase;
   writing-mode: vertical-rl;
   text-orientation: upright;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 @font-face {
@@ -61,26 +75,13 @@ img {
   font-weight: 400;
 }
 body {
-  background: var(--bg);
+  background: lch(var(--l-50) var(--clr-bw));
 }
 
-#dark-mode {
-  width: 240px;
-  height: 100px;
-  background: black;
-  margin-top: 50px;
-  margin-left: 50px;
-  border-radius: 50px;
-  display: grid;
-  position: relative;
-  place-items: center;
-}
-
-.moon {
-  position: absolute;
-  right: 10px;
-  height: 80px;
-  aspect-ratio: 1/1;
-  background: shite;
-  border-radius: 50%;
+.dark-mode-btn {
+  background-image: url(/Assets/Media/Moon.png);
+  background-size: contain;
+  width: 50px;
+  aspect-ratio: 1;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

@@ -23,27 +23,13 @@
 }
 
 body {
-  background: var(--bg);
+  background: colors.$clr-bw-50;
 }
 
-#dark-mode {
-  width: 240px;
-  height: 100px;
-  background: black;
-  margin-top: 50px;
-  margin-left: 50px;
-  border-radius:50px;
-  display: grid;
-  position: relative;
-  place-items: center;
-}
-
-.moon {
-  position: absolute;
-  right: 10px;
-  height: 80px;
-  aspect-ratio: 1/1;
-  background: shite;
-  border-radius: 50%;
-
+.dark-mode-btn {
+  background-image: url(/Assets/Media/Moon.png);
+  background-size: contain;
+  width: 50px;
+  aspect-ratio: 1;
+  border: none;
 }

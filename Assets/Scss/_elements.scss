@@ -11,11 +11,6 @@
   font-size: 16;
 }
 
-img{
-  display: block;
-  max-width: 100%;
-}
-
 // Main title - H1
 $title: (
     font-family:'vessel',
@@ -31,4 +26,9 @@ $title: (
   @each $property, $value in $title {
     #{$property}: $value;
   }
+}
+
+img{
+  display: block;
+  max-width: 100%;
 }

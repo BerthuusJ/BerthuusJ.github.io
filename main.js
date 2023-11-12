@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     
     darkModeBtn.onclick = function() {
       document.body.classList.toggle('dark-theme');
-      if(document.body.classList.contains('dark-theme')) {
-        darkModeBtn.src = '/Assets/Media/sun.png';
+      if (document.body.classList.contains('dark-theme')) {
+        darkModeBtn.style.backgroundImage = "url('/Assets/Media/Sun.png')";
       } else {
-        darkModeBtn.src = '/Assets/Media/moon.png';
+        darkModeBtn.style.backgroundImage = "url('/Assets/Media/Moon.png')";
       }
     }
   });

@@ -27,9 +27,16 @@ body {
 }
 
 .dark-mode-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   background-image: url(/Assets/Media/Moon.png);
   background-size: contain;
   width: 50px;
   aspect-ratio: 1;
   border: none;
+}
+
+.navbar {
+  display: flex;
 }

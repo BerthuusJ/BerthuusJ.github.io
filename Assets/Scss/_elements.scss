@@ -12,23 +12,28 @@
 }
 
 // Main title - H1
-$title: (
-    font-family:'vessel',
-    font-size: text.$txt-size-title,
-    font-weight:700,
-    color: var(--bg),
-    text-transform: uppercase,
-    writing-mode: vertical-rl,
-    text-orientation: upright,
+$navbar: (
+  display: flex,
+  align-items:center,
+  font-family: "Poppins",
+  font-size: text.$txt-size-nav-li,
+  font-weight: 400,
+  text-transform: uppercase,
+  list-style: none,
+  gap: text.$txt-gap-nav-li,
 );
 
-.title {
-  @each $property, $value in $title {
+.navbar {
+  @each $property, $value in $navbar {
     #{$property}: $value;
   }
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
+}
+
+.pineta {
+  
 }

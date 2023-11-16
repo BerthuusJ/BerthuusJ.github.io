@@ -1,1 +1,5 @@
-$txt-size-title: 2em;
+// font sizes
+$txt-size-nav-li: clamp(0.1rem, 2.5vw, 1.3rem);
+
+// gaps
+$txt-gap-nav-li: clamp(0.1rem, 2.5vw, 1.3rem);

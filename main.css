@@ -39,14 +39,15 @@
   font-size: 1em;
 }
 
-.title {
-  font-family: "vessel";
-  font-size: 2em;
-  font-weight: 700;
-  color: var(--bg);
+.navbar {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: clamp(0.1rem, 2.5vw, 1.3rem);
+  font-weight: 400;
   text-transform: uppercase;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  list-style: none;
+  gap: clamp(0.1rem, 2.5vw, 1.3rem);
 }
 
 img {
@@ -78,17 +79,69 @@ body {
   background: lch(var(--l-50) var(--clr-bw));
 }
 
-.dark-mode-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-image: url(/Assets/Media/Moon.png);
-  background-size: contain;
-  width: 50px;
-  aspect-ratio: 1;
-  border: none;
-}
-
 .navbar {
   display: flex;
+  overflow-x: hidden;
+}
+
+.logo-icon {
+  width: 66px;
+}
+
+.secondary-navbar {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: lch(var(--l-600) var(--clr-neutral));
+}
+
+.dark-mode-btn {
+  background-image: url(/Assets/Media/Moon.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2em;
+  aspect-ratio: 1;
+}
+
+.marquee-box {
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+.marquee {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h1 {
+  animation: marquee 5s linear infinite;
+  padding-left: 100%;
+  padding-right: 15%;
+}
+
+.marquee2 h1 {
+  animation-delay: 2.5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.paolo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50%;
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=main.css.map */

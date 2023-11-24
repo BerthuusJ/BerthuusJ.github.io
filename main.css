@@ -84,8 +84,9 @@ body {
   overflow-x: hidden;
 }
 
-.logo-icon {
+#elijahLogo {
   width: 66px;
+  fill: lch(var(--l-700) var(--clr-bw));
 }
 
 .secondary-navbar {
@@ -136,12 +137,4 @@ h1 {
   100% {
     transform: translateX(-100%);
   }
-}
-.paolo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50%;
-  width: 100px;
-  height: 100px;
 }/*# sourceMappingURL=main.css.map */

@@ -23,7 +23,7 @@
 }
 
 body {
-  background: colors.$clr-bw-50;
+  background: colors.$clr-neutral-600;
 }
 
 .navbar {
@@ -33,7 +33,7 @@ body {
 
 #elijahLogo {
   width: 66px;
-  fill: colors.$clr-bw-700;
+  fill: colors.$clr-secondary-200;
 }
 
 .secondary-navbar {
@@ -42,7 +42,7 @@ body {
 
 a {
   text-decoration: none;
-  color: colors.$clr-neutral-600;
+  color: colors.$clr-primary-600;
 }
 
 .dark-mode-btn {

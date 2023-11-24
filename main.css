@@ -1,33 +1,16 @@
 :root {
-  --clr-primary: 14.49 197.73;
-  --clr-secondary:32.43 151.66;
-  --clr-neutral:18.6 268.68;
-  --clr-bw:0 0;
-  --l-0: 100%;
-  --l-50: 90%;
-  --l-100: 80%;
-  --l-200: 70%;
-  --l-300: 60%;
-  --l-400: 50%;
-  --l-500: 40%;
-  --l-600: 30%;
-  --l-700: 20%;
-  --l-800: 10%;
-  --l-900: 0;
+  --clr-primary: 72 290;
+  --clr-secondary:25 200;
+  --clr-neutral: 0 0;
+  --l-200: 46%;
+  --l-400: 60%;
+  --l-600: 75%;
 }
 
 .dark-theme {
-  --l-0: 0;
-  --l-50: 10%;
-  --l-100: 20%;
-  --l-200: 30%;
-  --l-300: 40%;
-  --l-400: 50%;
-  --l-500: 60%;
-  --l-600: 70%;
-  --l-700: 80%;
-  --l-800: 90%;
-  --l-900: 100%;
+  --l-200: 75%;
+  --l-400: 60%;
+  --l-600: 46%;
 }
 
 * {
@@ -76,7 +59,7 @@ img {
   font-weight: 400;
 }
 body {
-  background: lch(var(--l-50) var(--clr-bw));
+  background: lch(var(--l-600) var(--clr-neutral));
 }
 
 .navbar {
@@ -86,7 +69,7 @@ body {
 
 #elijahLogo {
   width: 66px;
-  fill: lch(var(--l-700) var(--clr-bw));
+  fill: lch(var(--l-200) var(--clr-secondary));
 }
 
 .secondary-navbar {
@@ -95,7 +78,7 @@ body {
 
 a {
   text-decoration: none;
-  color: lch(var(--l-600) var(--clr-neutral));
+  color: lch(var(--l-600) var(--clr-primary));
 }
 
 .dark-mode-btn {
